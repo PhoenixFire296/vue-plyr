@@ -18,7 +18,8 @@
     "build:cjs:watch": "NODE_ENV=production rollup --c rollup.config.js --format=cjs --watch",
     "build:iife": "NODE_ENV=production rollup --c rollup.config.js --format=iife",
     "build:iife:watch": "NODE_ENV=production rollup --c rollup.config.js --format=iife --watch",
-    "lint": "vue-cli-service lint -f pretty"
+    "lint": "vue-cli-service lint -f pretty",
+    "prepare" "npm run build"
   },
   "main": "dist/vue-plyr.ssr.js",
   "module": "dist/vue-plyr.esm.js",
